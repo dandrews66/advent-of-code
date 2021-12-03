@@ -23,19 +23,18 @@ with open('input.txt') as f:
 
     line = f.readline()
     
-    while line:
-        if(line != ''):
-            q.add(int(line))
+    while line:  
+        q.add(int(line))
 
-            if(q.full()):
-                cur_sum = q.sum()
+        if(q.full()):
+            cur_sum = q.sum()
 
-                if(prev_sum != None):
-                    if(cur_sum > prev_sum):
-                        print('{} greater than {}'.format(cur_sum, prev_sum))
-                        counter += 1
-                
-                prev_sum = cur_sum 
+            if(prev_sum != None):
+                if(cur_sum > prev_sum):
+                    print('{} greater than {}'.format(cur_sum, prev_sum))
+                    counter += 1
+            
+            prev_sum = cur_sum 
 
         line = f.readline()
 
