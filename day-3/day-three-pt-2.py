@@ -1,11 +1,4 @@
 
-
-def bitListToInt(bitlist):
-    out = 0
-    for bit in bitlist:
-        out = (out << 1) | bit
-    return out
-
 def get_oxygen_rating(binary_list, digit):
     ones = []
     zeroes = []
