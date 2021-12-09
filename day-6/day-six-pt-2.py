@@ -14,10 +14,9 @@ with open('input.txt') as f:
     max_days = 256
     
     while day < max_days:
-        num_to_spawn = digits[0]
-        
-        digits.rotate(-1)
-        digits[6] += num_to_spawn #Each zero gets set to 6
+        num_zeroes = digits[0]
+        digits.rotate(-1) #Shift each digit of the array down an index. ie number of 5's now becomes the number of 4s. The 0 index rotates around and becomes the 8 index
+        digits[6] += num_zeroes #Each zero gets set to 6
         
         day = day + 1
 
