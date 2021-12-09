@@ -1,4 +1,2 @@
 .vscode/launch.json
-day-4/__pycache__/
-day-5/__pycache__/
-day-5/__pycache__/
+**/*.pyc
