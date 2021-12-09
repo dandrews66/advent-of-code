@@ -18,7 +18,7 @@ with open('input.txt') as f:
         data = [x - 1 for x in data] #subtract days
         data = [x if x != -1 else 6 for x in data] #Replace 0 with 6
         data.extend(new_laternfish) #Add new laternfish
-
+        
         day = day + 1
 
     print(len(data))
